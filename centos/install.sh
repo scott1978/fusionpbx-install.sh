@@ -25,15 +25,15 @@ resources/selinux.sh
 #Postgres
 resources/postgresql.sh
 
+#Firewalld
+resources/firewalld.sh
+
 #NGINX web server
 resources/sslcert.sh
 resources/nginx.sh
 
 #PHP/PHP-FPM
 resources/php.sh
-
-#Firewalld
-resources/firewalld.sh
 
 #FreeSWITCH
 resources/switch.sh
