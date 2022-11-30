@@ -22,9 +22,6 @@ yum -y install ntp yum-utils net-tools epel-release htop vim openssl
 # Disable SELinux
 resources/selinux.sh
 
-#FusionPBX
-resources/fusionpbx.sh
-
 #Postgres
 resources/postgresql.sh
 
@@ -40,6 +37,9 @@ resources/firewalld.sh
 
 #FreeSWITCH
 resources/switch.sh
+
+#FusionPBX
+resources/fusionpbx.sh
 
 #Fail2ban
 resources/fail2ban.sh
