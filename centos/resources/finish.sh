@@ -23,7 +23,7 @@ sudo -u postgres /usr/bin/psql -c "ALTER USER fusionpbx WITH PASSWORD '$database
 sudo -u postgres /usr/bin/psql -c "ALTER USER freeswitch WITH PASSWORD '$database_password';"
 
 #add the config.conf
-cp fusionpbx/config.conf /etc/fusionpbx
+cp fusionpbx/config.conf /etc/fusionpbx/config.conf
 sed -i /etc/fusionpbx/config.conf -e s:"{database_host}:$database_host:"
 sed -i /etc/fusionpbx/config.conf -e s:"{database_name}:$database_name:"
 sed -i /etc/fusionpbx/config.conf -e s:"{database_username}:$database_username:"
